@@ -166,7 +166,7 @@ function Home() {
             <p className="boldText padd16">Are you sure you want to delete?</p>
           </div>
 
-          <p className="secondary padd16 text20 fa-solid fa-xmark"></p>
+          <p onClick={() => setVal(false)} className="secondary padd16 text20 fa-solid fa-xmark"></p>
         </div>
 
         <div className="modal-details">
