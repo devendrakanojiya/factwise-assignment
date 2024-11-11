@@ -1,0 +1,218 @@
+/* App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.App {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.celebrity-list {
+  margin-top: 20px;
+}
+
+.celebrity-item {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  overflow: hidden;
+  transition: background-color 0.3s;
+}
+
+.celebrity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.celebrity-header:hover {
+  background-color: #f8f5f5;
+}
+img {
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: inline;
+  margin-right: 6px;
+}
+
+.boldText {
+  font-size: larger;
+}
+.padd16 {
+  padding: 16px;
+}
+
+.pic {
+  display: flex;
+  align-items: center;
+}
+
+.celebrity-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.celebrity-details p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.btn {
+  display: flex;
+  width: -webkit-fill-available;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+.del-btn {
+  height: 40px;
+  width: 95px;
+  padding: 13px;
+  border-radius: 12px;
+  border: 1px solid #ccc;
+  margin: 3px;
+  cursor: pointer;
+  outline: none;
+}
+.og-btn {
+  background-color: orangered;
+  color: white;
+}
+
+.secondary {
+  color: #c2c1c1;
+}
+.danger {
+  color: #c82333;
+}
+.success {
+  color: #007bff;
+}
+
+/* Modal Starts  */
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 1;
+  backdrop-filter: blur(8px);
+  top: 0;
+  right: 0;
+}
+.modal {
+  top: 45%;
+  min-width: 560px;
+  height: 157.8px;
+  margin: auto;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  z-index: 2;
+  position: fixed;
+  background-color: white;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.modal-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding: 15px;
+}
+.invisible {
+  display: none;
+}
+.text20 {
+  fontsize: "20px";
+}
+/* Modal Ends  */
+
+button.save-button {
+  background-color: #28a745;
+  color: white;
+}
+
+button.save-button:hover {
+  background-color: #218838;
+}
+
+button.cancel-button {
+  background-color: #6c757d;
+  color: white;
+}
+
+button.cancel-button:hover {
+  background-color: #5a6268;
+}
+
+/* Edit Mode Inputs */
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 14px;
+  outline: none;
+}
+
+input[type="text"] {
+  width: 100%;
+  /* padding: 10px; */
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+
+.textDiv {
+  width: inherit;
+  min-height: min-content;
+}
+.parentDiv {
+  width: 100%;
+  height: 100%;
+}
+
+textarea {
+  resize: none;
+  height: -webkit-fill-available;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+select:focus,
+textarea:focus {
+  border-color: #007bff;
+}
+
+input.inp-searchbar {
+  padding: 9px 4px 9px 40px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+}
